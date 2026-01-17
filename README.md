@@ -1,8 +1,8 @@
-# Splunk Labs
+Splunk Labs
 
 This repository contains SPL (Search Processing Language) queries for detecting security incidents using Splunk.
 
-## 🔍 Detection Queries
+Detection Queries
 
 ### `failed-logins.spl`
 
@@ -20,7 +20,7 @@ Detects user account lockouts, grouped by domain controller and source workstati
 - **Fields used:** `TargetUserName`, `Caller_Computer_Name`, `host`
 - **Purpose:** Investigate repeated lockouts, which could indicate misconfigurations or attacks.
 
-## 📚 Notes
+Notes
 
 - You can run these queries in Splunk Enterprise or Splunk Free if WinEventLogs are ingested.
 - Field names are normalized for readability in dashboards and reports.
