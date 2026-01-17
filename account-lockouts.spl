@@ -1,0 +1,5 @@
+index=wineventlog EventCode=4740 
+| stats count by TargetUserName, Caller_Computer_Name, host
+| rename TargetUserName AS Locked_User, Caller_Computer_Name AS Source_Workstation, host AS Domain_Controller
+| sort - count
+
