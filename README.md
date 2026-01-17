@@ -4,21 +4,21 @@ This repository contains SPL (Search Processing Language) queries for detecting 
 
 Detection Queries
 
-### `failed-logins.spl`
+`failed-logins.spl`
 
 Detects multiple failed login attempts from the same source IP and username.
 
-- **Event Code:** 4625
-- **Fields used:** `user`, `src_ip`
-- **Purpose:** Identify brute-force attacks or misconfigured systems causing login failures.
+- Event Code: 4625
+- Fields used: `user`, `src_ip`
+- Purpose: Identify brute-force attacks or misconfigured systems causing login failures.
 
-### `account-lockouts.spl`
+`account-lockouts.spl`
 
 Detects user account lockouts, grouped by domain controller and source workstation.
 
-- **Event Code:** 4740
-- **Fields used:** `TargetUserName`, `Caller_Computer_Name`, `host`
-- **Purpose:** Investigate repeated lockouts, which could indicate misconfigurations or attacks.
+- Event Code:** 4740
+- Fields used: `TargetUserName`, `Caller_Computer_Name`, `host`
+- Purpose: Investigate repeated lockouts, which could indicate misconfigurations or attacks.
 
 Notes
 
