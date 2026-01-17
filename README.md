@@ -2,8 +2,6 @@
 
 This repository contains SPL (Search Processing Language) queries for detecting security incidents using Splunk.
 
----
-
 ## 🔍 Detection Queries
 
 ### `failed-logins.spl`
@@ -14,8 +12,6 @@ Detects multiple failed login attempts from the same source IP and username.
 - **Fields used:** `user`, `src_ip`
 - **Purpose:** Identify brute-force attacks or misconfigured systems causing login failures.
 
----
-
 ### `account-lockouts.spl`
 
 Detects user account lockouts, grouped by domain controller and source workstation.
@@ -23,8 +19,6 @@ Detects user account lockouts, grouped by domain controller and source workstati
 - **Event Code:** 4740
 - **Fields used:** `TargetUserName`, `Caller_Computer_Name`, `host`
 - **Purpose:** Investigate repeated lockouts, which could indicate misconfigurations or attacks.
-
----
 
 ## 📚 Notes
 
